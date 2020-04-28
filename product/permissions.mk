@@ -1,4 +1,4 @@
-DEVICE_PATH := device/samsung/hero-common
+DEVICE_PATH := device/samsung/grace-common
 
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.ethernet.xml:system/etc/permissions/android.hardware.ethernet.xml \

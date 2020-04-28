@@ -15,7 +15,7 @@
         android:targetSdkVersion="27"/>
 
     <application
-        android:label="HeroDoze"
+        android:label="GraceDoze"
         android:persistent="true">
 
         <receiver android:name="org.lineageos.settings.doze.BootCompletedReceiver">
@@ -26,7 +26,7 @@
         </receiver>
 
         <service android:name="org.lineageos.settings.doze.DozeService"
-                 android:permission="HeroDozeService">
+                 android:permission="GraceDozeService">
         </service>
 
         <activity

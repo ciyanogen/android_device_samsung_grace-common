@@ -12,9 +12,9 @@
 
 #include "init_sec.h"
 
-#define MODEL_NAME_LEN 5  // e.g. "G935F"
-#define BUILD_NAME_LEN 8  // e.g. "XXU1DQJ1"
-#define CODENAME_LEN   11 // e.g. "hero2ltebmc"
+#define MODEL_NAME_LEN 5  // e.g. "N935F"
+#define BUILD_NAME_LEN 8  // e.g. "XXU6CSK1"
+#define CODENAME_LEN   11 // e.g. "gracerltexx"
 
 
 static void property_override(char const prop[], char const value[]) {
@@ -39,9 +39,9 @@ void vendor_load_properties()
     const std::string bl_model = bootloader.substr(0, MODEL_NAME_LEN);
     const std::string bl_build = bootloader.substr(MODEL_NAME_LEN);
 
-    std::string model;  // G935F
-    std::string device; // hero2lte
-    std::string name;    // hero2ltebmc
+    std::string model;  // N935F
+    std::string device; // gracerlte
+    std::string name;    // gracerltexx
     std::string description;
     std::string fingerprint;
 
@@ -56,14 +56,16 @@ void vendor_load_properties()
     }
 
     if (device.size() == 0) {
-        LOG(ERROR) << "Could not detect device, forcing hero2lte";
-        device = "hero2lte";
+        LOG(ERROR) << "Could not detect device, forcing gracelte";
+        device = "gracelte";
     }
 
     name = device + "xx";
 
-    description = name + "-user 8.0.0 R16NW " + bl_model + bl_build + " release-keys";
-    fingerprint = "samsung/" + name + "/" + device + ":8.0.0/R16NW/" + bl_model + bl_build + ":user/release-keys";
+/*    description = name + "-user 8.0.0 R16NW " + bl_model + bl_build + " release-keys"; */ 
+/*    fingerprint = "samsung/" + name + "/" + device + ":8.0.0/R16NW/" + bl_model + bl_build + ":user/release-keys"; */
+    description = "gracerltexx-user 9 PPR1.180610.011 N935FXXU6CSK1 release-keys"; // Forcing gracerltexx for now
+    fingerprint = "samsung/gracerltexx/gracerlte:9/PPR1.180610.011/N935FXXU6CSK1:user/release-keys"; // Forcing gracerltexx for now
 
     LOG(INFO) << "Found bootloader: " << bootloader;
     LOG(INFO) << "Setting ro.product.model and ro.vendor.product.model: " << model;

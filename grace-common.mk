@@ -15,9 +15,9 @@
 #
 
 # Common Overlays
-DEVICE_PACKAGE_OVERLAYS += device/samsung/hero-common/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/grace-common/overlay
 
-LOCAL_PATH := device/samsung/hero-common
+LOCAL_PATH := device/samsung/grace-common
 
 ###########################################################
 ### RAMDISK
@@ -75,7 +75,7 @@ PRODUCT_PACKAGES += \
 	libsamsung_symbols \
 	SamsungServiceMode \
 	Torch \
-        HeroDoze \
+        graceDoze \
 	thermal.universal8890 \
 	android.hidl.base@1.0 \
 	android.hidl.manager@1.0
@@ -103,5 +103,5 @@ PRODUCT_PACKAGES += \
 #$(call inherit-product, hardware/samsung_slsi/exynos8890/exynos8890.mk)
 
 # call the proprietary setup
-$(call inherit-product, vendor/samsung/hero-common/hero-common-vendor.mk)
+$(call inherit-product, vendor/samsung/grace-common/grace-common-vendor.mk)
 $(call inherit-product, vendor/seal/seal/seal-common-vendor.mk)

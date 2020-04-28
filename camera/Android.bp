@@ -15,11 +15,11 @@
 //
 
 cc_library_static {
-	name: "libcamera_parameters_hero",
+	name: "libcamera_parameters_grace",
 	srcs: [
 		"CameraParameters.cpp",
 	],
 	include_dirs: [
-		"device/samsung/hero-common/include"
+		"device/samsung/grace-common/include"
 	],
 }

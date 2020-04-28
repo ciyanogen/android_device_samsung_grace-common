@@ -14,7 +14,7 @@
 # GNU General Public License for more details.
 #
 
-LOCAL_PATH := device/samsung/hero-common
+LOCAL_PATH := device/samsung/grace-common
 
 # Include path
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
@@ -64,24 +64,24 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 -
 TARGET_CUSTOM_DTBTOOL := dtbhtoolExynos
 
 # Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/hero-common/releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/grace-common/releasetools
 
 # Properties
-TARGET_SYSTEM_PROP := device/samsung/hero-common/system.prop
+TARGET_SYSTEM_PROP := device/samsung/grace-common/system.prop
 
 # Renderscript
 BOARD_OVERRIDE_RS_CPU_VARIANT_32 := cortex-a53.a57
 BOARD_OVERRIDE_RS_CPU_VARIANT_64 := exynos-m1
 
 # SELinux
-# BOARD_SEPOLICY_DIRS := device/samsung/hero-common/sepolicy
+# BOARD_SEPOLICY_DIRS := device/samsung/grace-common/sepolicy
 
 # SECComp filters
-BOARD_SECCOMP_POLICY += device/samsung/hero-common/seccomp
+BOARD_SECCOMP_POLICY += device/samsung/grace-common/seccomp
 
 # Inherit board specific defines
--include device/samsung/hero-common/board/*.mk
+-include device/samsung/grace-common/board/*.mk
 
 # Inherit from the proprietary version
--include vendor/samsung/hero-common/BoardConfigVendor.mk
+-include vendor/samsung/grace-common/BoardConfigVendor.mk
 -include vendor/seal/seal/BoardConfigVendor.mk
