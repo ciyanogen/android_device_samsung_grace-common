@@ -1,4 +1,4 @@
-DEVICE_PATH := device/samsung/hero-common
+DEVICE_PATH := device/samsung/grace-common
 
 # Copy stock APN config as lineage one seams to be quite broken and outdated
 PRODUCT_COPY_FILES += \

@@ -16,7 +16,7 @@
 
 #include "vendor_interface.h"
 
-#define LOG_TAG "android.hardware.bluetooth@1.0-impl-hero"
+#define LOG_TAG "android.hardware.bluetooth@1.0-impl-grace"
 #include <cutils/properties.h>
 #include <utils/Log.h>
 

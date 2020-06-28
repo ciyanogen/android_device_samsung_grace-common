@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export VENDOR=samsung
-export DEVICE=hero-common
+export DEVICE=grace-common
 
 OUTDIR=vendor/$VENDOR/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk

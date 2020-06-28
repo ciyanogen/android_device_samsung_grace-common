@@ -1,7 +1,7 @@
 # Init Resources
 PRODUCT_PACKAGES += \
 	init.bluetooth.rc \
-	android.hardware.bluetooth@1.0-impl-hero \
+	android.hardware.bluetooth@1.0-impl-grace \
 	libbt-vendor
 
 # Properties

@@ -14,7 +14,7 @@
 // limitations under the License.
 //
 
-#define LOG_TAG "android.hardware.bluetooth@1.0-impl-hero"
+#define LOG_TAG "android.hardware.bluetooth@1.0-impl-grace"
 #include "bluetooth_hci.h"
 
 #include <log/log.h>

@@ -15,9 +15,9 @@
 #
 
 # Common Overlays
-DEVICE_PACKAGE_OVERLAYS += device/samsung/hero-common/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/grace-common/overlay
 
-LOCAL_PATH := device/samsung/hero-common
+LOCAL_PATH := device/samsung/grace-common
 
 # Shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
@@ -134,5 +134,5 @@ TARGET_LMKD_STATS_LOG := true
 #$(call inherit-product, hardware/samsung_slsi/exynos8890/exynos8890.mk)
 
 # call the proprietary setup
-$(call inherit-product, vendor/samsung/hero-common/hero-common-vendor.mk)
+$(call inherit-product, vendor/samsung/grace-common/grace-common-vendor.mk)
 $(call inherit-product, vendor/seal/seal/seal-common-vendor.mk)

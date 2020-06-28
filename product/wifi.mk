@@ -1,4 +1,4 @@
-DEVICE_PATH := device/samsung/hero-common
+DEVICE_PATH := device/samsung/grace-common
 
 # Configs
 PRODUCT_COPY_FILES += \
